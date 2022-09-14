@@ -1,0 +1,14 @@
+{
+    "id_usuario": "2",
+    "nombre": "Paola",
+    "apellido": "Brodersen",
+    "edad": 29,
+    "correo_electronico": "edith@gmail.com"
+  }
+  {
+    "id_usuario": "3",
+    "nombre": "juan",
+    "apellido": "Perez",
+    "edad": 36,
+    "correo_electronico": "juan@gmail.com"
+  }
