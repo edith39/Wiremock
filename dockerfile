@@ -1,5 +1,5 @@
 FROM rodolpheche/wiremock
-LABEL maintainer="Your Name <youremail@somewhere.com>"
+LABEL maintainer="Edith <edith39Brodersen@gmail.com>"
  
 ADD mappings/*.json /home/wiremock/mappings/
 ADD __files/ /home/wiremock/__files/
