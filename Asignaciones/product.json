@@ -1,0 +1,135 @@
+{
+  "mappings": [
+      {
+          "request": {
+              "urlPattern": "/product",
+              "method": "POST",
+              "bodyPatterns" : [ {
+                  "equalToJson" : "{\"nombre\":\"paola\", \"apellido\":\"${json-unit.any-string}\",\"edad\":\"${json-unit.any-number}\" }",
+                  "ignoreExtraElements" : true
+                } ]
+              },
+          
+          "response": {
+              "status": 201,
+              "bodyFileName": "responseUsuarios/crearUsuario.json",
+              "headers": {
+                  "Content-Type": "application/json",
+                  "Access-Control-Allow-Origin" : "*",
+                  "Access-Control-Allow-Methods" : "*",
+                  "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+                }
+              }
+      },
+      {
+          "request": {
+            "urlPattern": "/product",
+            "method": "POST",
+            "bodyPatterns" : [ {
+                "equalToJson" : "{\"nombre\":\"\", \"apellido\":\"Juarez\",\"edad\":\"${json-unit.ignore}\" }",
+                "ignoreExtraElements" : true
+                  }
+                ]
+              },
+          "response": {
+              "status": 400,
+              "bodyFileName": "responseUsuarios/crearUsuario400.json",
+              "headers": {
+                  "Content-Type": "application/json",
+                  "Access-Control-Allow-Origin" : "*",
+                  "Access-Control-Allow-Methods" : "*",
+                  "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+                }
+              }
+            },
+            {
+              "request": {
+                "urlPath": "/product",
+                "method": "GET",
+                "headers": {
+                    "content-type": {
+                        "equalTo": "application/json"
+                    }
+                }
+                },
+              
+            "response": {
+                "status": 200,
+                "bodyFileName": "responseUsuarios/listado.json",
+                "headers": {
+                    "Content-Type": "application/json",
+                    "Access-Control-Allow-Origin" : "*",
+                    "Access-Control-Allow-Methods" : "*",
+                    "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+                  }
+                }
+              },
+       {
+        "request": {
+          "urlPath": "/product/2",
+          "method": "GET",
+          "headers": {
+              "content-type": {
+                  "equalTo": "application/json"
+              }
+          }
+          },
+        
+      "response": {
+          "status": 200,
+          "bodyFileName": "responseUsuarios/usuario2.json",
+          "headers": {
+              "Content-Type": "application/json",
+              "Access-Control-Allow-Origin" : "*",
+              "Access-Control-Allow-Methods" : "*",
+              "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+            }
+          }
+      
+          },
+      {
+      "request": {
+      "urlPath": "/product/9",
+      "method": "GET",
+      "headers": {
+          "content-type": {
+              "equalTo": "application/json"
+          }
+      }
+      },
+
+      "response": {
+      "status": 404,
+      "bodyFileName": "responseUsuarios/usuario404.json",
+      "headers": {
+          "Content-Type": "application/json",
+          "Access-Control-Allow-Origin" : "*",
+          "Access-Control-Allow-Methods" : "*",
+          "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+        }
+      }
+  
+      },
+  {
+          "request": {
+          "urlPath": "/product/3",
+          "method": "DELETE",
+          "headers": {
+              "content-type": {
+                  "equalTo": "application/json"
+              }
+          }
+          },
+
+          "response": {
+          "status": 204,
+          "headers": {
+              "Content-Type": "application/json",
+              "Access-Control-Allow-Origin" : "*",
+              "Access-Control-Allow-Methods" : "*",
+              "Access-Control-Allow-Headers": "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+        }
+      }
+              }
+        ]
+}
