@@ -1,9 +1,0 @@
-{
-    "status": [
-      {
-        "http_status": "404",
-        "code": "404",
-        "description": "El usuario con el identificador 9 no se ha encontrado"
-      }
-    ]
-  }
