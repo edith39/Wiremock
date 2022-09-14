@@ -1,0 +1,51 @@
+2022-08-22 17:24:51.636 Verbose logging enabled
+2022-08-22 17:24:52.713 Verbose logging enabled
+ /$$      /$$ /$$                     /$$      /$$                     /$$      
+| $$  /$ | $$|__/                    | $$$    /$$$                    | $$      
+| $$ /$$$| $$ /$$  /$$$$$$   /$$$$$$ | $$$$  /$$$$  /$$$$$$   /$$$$$$$| $$   /$$
+| $$/$$ $$ $$| $$ /$$__  $$ /$$__  $$| $$ $$/$$ $$ /$$__  $$ /$$_____/| $$  /$$/
+| $$$$_  $$$$| $$| $$  \__/| $$$$$$$$| $$  $$$| $$| $$  \ $$| $$      | $$$$$$/ 
+| $$$/ \  $$$| $$| $$      | $$_____/| $$\  $ | $$| $$  | $$| $$      | $$_  $$ 
+| $$/   \  $$| $$| $$      |  $$$$$$$| $$ \/  | $$|  $$$$$$/|  $$$$$$$| $$ \  $$
+|__/     \__/|__/|__/       \_______/|__/     |__/ \______/  \_______/|__/  \__/
+
+port:                         8080
+enable-browser-proxying:      false
+disable-banner:               false
+no-request-journal:           false
+verbose:                      true
+
+2022-08-22 17:29:27.206 Request received:
+[0:0:0:0:0:0:0:1] - GET /usuarios/2
+
+Content-Type: [application/json]
+User-Agent: [PostmanRuntime/7.29.2]
+Accept: [*/*]
+Postman-Token: [794a43ea-27ad-4585-9099-d9d5972bea7d]
+Host: [localhost:8080]
+Accept-Encoding: [gzip, deflate, br]
+Connection: [keep-alive]
+
+
+
+Matched response definition:
+{
+  "status" : 200,
+  "bodyFileName" : "responseUsuarios/usuario2.json",
+  "headers" : {
+    "Content-Type" : "application/json",
+    "Access-Control-Allow-Origin" : "*",
+    "Access-Control-Allow-Methods" : "*",
+    "Access-Control-Allow-Headers" : "Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding"
+  }
+}
+
+Response:
+HTTP/1.1 200
+Content-Type: [application/json]
+Access-Control-Allow-Origin: [*]
+Access-Control-Allow-Methods: [*]
+Access-Control-Allow-Headers: [Accept, Content-Type, Content-Encoding, Server, Transfer-Encoding]
+Matched-Stub-Id: [40facea6-b1de-40dc-b589-c594b1245e24]
+
+
