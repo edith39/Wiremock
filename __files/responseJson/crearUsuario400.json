@@ -1,0 +1,9 @@
+{
+    "status": [
+      {
+        "http_status": "400",
+        "code": "400",
+        "description": "El parametro {$nombre} es obligatorio"
+      }
+    ]
+  }
